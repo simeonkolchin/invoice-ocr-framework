@@ -186,6 +186,11 @@ All credentials come from the environment:
 
 **No changes to the engine are required.**
 
+## 👥 Authors
+
+- [**Simeon Kolchin**](https://github.com/simeonkolchin)
+- [**Dmitriy Kutsenko**](https://github.com/kdimon15)
+
 ## 📄 License
 
-MIT © [Simeon Kolchin](https://github.com/simeonkolchin)
+MIT © [Simeon Kolchin](https://github.com/simeonkolchin) & [Dmitriy Kutsenko](https://github.com/kdimon15)
