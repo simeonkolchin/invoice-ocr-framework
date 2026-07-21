@@ -34,6 +34,23 @@ PDF → OCR first page → match template by keywords → extract fields
 
 > ℹ️ This repository is an **anonymised extraction of a production system** that ran against dozens of real suppliers. The engine is the real thing; the supplier templates here are **fictional samples** written for the demo.
 
+## 📄 Why templates: every supplier looks different
+
+This is the whole problem in one picture. Three invoices, three completely different layouts — different field labels, different positions, different table shapes, two languages. A single regex set cannot read all of them; a template per supplier can.
+
+<div align="center">
+
+| Form-style layout | Dense table layout | Compact layout |
+|:---:|:---:|:---:|
+| <img src="docs/sample-layout-form.png" width="260"/> | <img src="docs/sample-layout-table.png" width="260"/> | <img src="docs/sample-layout-compact.png" width="260"/> |
+| Boxed header, grid of size/price columns | Header block + long line-item table | Short table with a totals panel |
+
+</div>
+
+> 🔒 **Real invoices, fully redacted.** Every identifying detail — supplier, buyer, people, addresses, phones, emails, tax IDs, AWB/DAE numbers, bank details and logos — has been **removed from the PDF itself** (true redaction, not an overlay) before rendering. What remains is exactly what matters here: the *structure* each template has to cope with.
+
+Notice what stays constant across all three: there is always an invoice number, a date, an air-waybill, a consignee, and a table of line items. That shared skeleton is what the field names in a template map onto — while `keywords`, regexes and `split_coordinates` absorb the differences.
+
 ## 🏗️ How it works
 
 ```mermaid
