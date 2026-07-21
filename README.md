@@ -8,10 +8,13 @@
 [![Tesseract](https://img.shields.io/badge/OCR-Tesseract-4285F4)](https://github.com/tesseract-ocr/tesseract)
 [![Docker](https://img.shields.io/badge/Docker-ready-2496ED?logo=docker&logoColor=white)](#-quick-start)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+![Built](https://img.shields.io/badge/built-2024–2025-lightgrey)
 
 </div>
 
 ---
+
+> 📅 **Project timeline.** The production system this is extracted from was built between **August 2024 and January 2025** (most of the work in September–October 2024). It is **no longer under active development**; this repository is an anonymised archive of the engine.
 
 ## 🎯 The problem
 
