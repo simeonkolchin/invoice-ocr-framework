@@ -1,0 +1,4 @@
+from parsers.tesseract_parser import TesseractParser
+from parsers.base_parser import BaseParser
+from parsers.tesseract_split_parser import TesseractSplitParser
+from parsers.static_parser import StaticParser

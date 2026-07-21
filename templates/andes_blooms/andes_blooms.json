@@ -1,0 +1,30 @@
+{
+    "name": "Andes Blooms Invoice (sample)",
+    "keywords": ["ANDES BLOOMS CIA. LTDA.", "ventas@andesblooms.example"],
+    "split_coordinates": [0.38],
+    "non_fields": ["SUBTOTAL", "GRAND TOTAL"],
+    "fields": {
+        "tesseract": {
+            "INVOICE_NUMBER": "INVOICE\\s*No\\.?\\s*(\\d+)",
+            "AVIA_TICKET": "AWB\\s*([\\d-]+)"
+        },
+        "tesseract_split": {
+            "INVOICE_DATE": "DATE\\s*(\\d{2}-\\d{2}-\\d{4})",
+            "FULL_PLACES_COUNT": "PIECES\\s*(\\d+)"
+        },
+        "table": [
+            {
+                "name": "DeepInfo",
+                "columns": [
+                    "#",
+                    "BOX",
+                    "PRODUCT",
+                    "VARIETY",
+                    "STEMS",
+                    "PRICE PER STEM($)",
+                    "TOTAL USD($)"
+                ]
+            }
+        ]
+    }
+}

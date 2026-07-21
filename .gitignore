@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# OAuth credentials — never commit
+config/client.json
+config/token.json
+*.env
+
+# Inputs / outputs
+*.pdf
+*.PDF
+**/output.json
+temp/
+data/
+
+.DS_Store
+.idea/
+.vscode/
